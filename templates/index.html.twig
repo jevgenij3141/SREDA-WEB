@@ -1,1 +1,15 @@
-test
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SREDA</title>
+    </head>
+    <body>
+        {#<h1>{{ page_title }}</h1>
+
+        {% if user.isLoggedIn %}
+            Hello {{ user.name }}!
+        {% endif %}
+
+        #}
+    </body>
+</html>
