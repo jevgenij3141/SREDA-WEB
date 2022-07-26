@@ -2,14 +2,32 @@
 <html>
     <head>
         <title>SREDA</title>
+
+        {% block stylesheets %}
+            {# 'app' must match the first argument to addEntry() in webpack.config.js #}
+            {{ encore_entry_link_tags('app') }}
+
+            <!-- Renders a link tag (if your module requires any CSS)
+                 <link rel="stylesheet" href="/build/app.css"> -->
+        {% endblock %}
     </head>
     <body>
-        {#<h1>{{ page_title }}</h1>
+        {% block header %}
+            <div class="row header">
+                header
+            </div>
+        {% endblock %}
 
-        {% if user.isLoggedIn %}
-            Hello {{ user.name }}!
-        {% endif %}
+        {% block content %}
+            <div class="row content">
+                content
+            </div>
+        {% endblock %}
 
-        #}
+        {% block footer %}
+            <div class="row footer">
+                footer
+            </div>
+        {% endblock %}
     </body>
 </html>
