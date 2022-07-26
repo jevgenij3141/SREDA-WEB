@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>SREDA</title>
 
-        {% block stylesheets %}
-            {# 'app' must match the first argument to addEntry() in webpack.config.js #}
-            {{ encore_entry_link_tags('app') }}
+<head>
+    <title>SREDA</title>
 
-            <!-- Renders a link tag (if your module requires any CSS)
+    {% block stylesheets %}
+    {# 'app' must match the first argument to addEntry() in webpack.config.js #}
+    {{ encore_entry_link_tags('app') }}
+
+    <!-- Renders a link tag (if your module requires any CSS)
                  <link rel="stylesheet" href="/build/app.css"> -->
-        {% endblock %}
-    </head>
-    <body>
-        {% block header %}
-            <div class="row header">
-                header
-            </div>
-        {% endblock %}
+    {% endblock %}
+</head>
 
-        {% block content %}
-            <div class="row content">
-                content
-            </div>
-        {% endblock %}
+<body>
+    {% block header %}
+    <header class="navbar navbar-expand-lg navbar-dark bd-navbar sticky-top">
+        <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
+            <a class="navbar-brand p-0 me-0 me-lg-2">Logo</a>
+            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+                <li class="nav-item col-6 col-lg-auto">
+                    <a class="nav-link py-2 px-0 px-lg-2" href="/docs/5.2/getting-started/introduction/"
+                        onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Docs</a>
+                </li>
+                <li class="nav-item col-6 col-lg-auto">
+                    <a class="nav-link py-2 px-0 px-lg-2" href="/docs/5.2/examples/"
+                        onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
+                </li>
+                <li class="nav-item col-6 col-lg-auto">
+                    <a class="nav-link py-2 px-0 px-lg-2" href="https://icons.getbootstrap.com/"
+                        onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');" target="_blank"
+                        rel="noopener">Icons</a>
+                </li>
+                <li class="nav-item col-6 col-lg-auto">
+                    <a class="nav-link py-2 px-0 px-lg-2" href="https://themes.getbootstrap.com/"
+                        onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank"
+                        rel="noopener">Themes</a>
+                </li>
+                <li class="nav-item col-6 col-lg-auto">
+                    <a class="nav-link py-2 px-0 px-lg-2" href="https://blog.getbootstrap.com/"
+                        onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank"
+                        rel="noopener">Blog</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    {% endblock %}
 
-        {% block footer %}
-            <div class="row footer">
-                footer
-            </div>
-        {% endblock %}
-    </body>
+    {% block content %}
+    <div class="row content">
+        content
+    </div>
+    {% endblock %}
+
+    {% block footer %}
+    <div class="row footer">
+        footer
+    </div>
+    {% endblock %}
+</body>
+
 </html>
