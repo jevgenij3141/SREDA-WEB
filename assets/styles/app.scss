@@ -4,6 +4,22 @@ body {
 }
 
 header{
-    background: #0058dd;
+    max-height: 62px;
+    background: #0057b7;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%)!important;
+
+    ul{
+        display: inline;
+        li{
+            display: inline;
+            a{
+                color: #d2d2e3;
+                font-size: 16px;
+                font-family:Arial, Helvetica, sans-serif;
+                text-decoration: none;
+                line-height: 45px;
+                padding: 0 14px;
+            }
+        }
+    }
 }
