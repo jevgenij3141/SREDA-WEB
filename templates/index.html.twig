@@ -137,8 +137,9 @@
     {% endblock %}
 
     {% block content %}
-    <div class="row content">
-        content
+    {# <div class="row content">
+        {{ include('views/home.html.twig') }} #}
+        {{ render(controller('App\\Controller\\Main::pages')) }}
     </div>
     {% endblock %}
 

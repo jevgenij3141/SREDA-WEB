@@ -11,4 +11,8 @@ class Main extends AbstractController
     {
         return $this->render('index.html.twig');
     }
+
+    public function pages(): Response{
+        return $this->render('views/page.html.twig');
+    }
 }
