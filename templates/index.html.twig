@@ -112,18 +112,18 @@
 
             <ul class="navbar-nav d-flex ms-auto">
                 <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="/docs/5.2/examples/">Начало</a>
+                    <a class="nav-link py-2 px-0 px-lg-2" href="{{ path('home') }}">Начало</a>
                 </li>
                 <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="https://icons.getbootstrap.com/" target="_blank"
+                    <a class="nav-link py-2 px-0 px-lg-2" href="{#{ path('creation') }#}"
                         rel="noopener">Творчество</a>
                 </li>
                 <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="https://themes.getbootstrap.com/" target="_blank"
+                    <a class="nav-link py-2 px-0 px-lg-2" href="https://themes.getbootstrap.com/"
                         rel="noopener">Медиа</a>
                 </li>
                 <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="https://blog.getbootstrap.com/" target="_blank"
+                    <a class="nav-link py-2 px-0 px-lg-2" href="https://blog.getbootstrap.com/"
                         rel="noopener">Обо мне</a>
                 </li>
                 <li class="nav-item col-6 col-lg-auto">
@@ -139,7 +139,7 @@
     {% block content %}
     {# <div class="row content">
         {{ include('views/home.html.twig') }} #}
-        {{ render(controller('App\\Controller\\Main::pages')) }}
+        {# {{ render(controller('App\\Controller\\Home::pages')) }} #}
     </div>
     {% endblock %}
 
