@@ -48,7 +48,24 @@ header{
 .form-container{
     background: $spring;
 
-    H2{
+    H2, H3, H4, H5{
         color: $text_color_light;
+    }
+}
+
+.skills{
+    list-style: none;
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+    li{
+        background: $summer;
+        padding: 0 10px;
+        border-radius: 5px;
+        line-height: 25px;
+        margin:4px 5px;
     }
 }
