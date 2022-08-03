@@ -115,7 +115,7 @@
                     <a class="nav-link py-2 px-0 px-lg-2" href="{{ path('home') }}">Начало</a>
                 </li>
                 <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="{#{ path('creation') }#}"
+                    <a class="nav-link py-2 px-0 px-lg-2" href="{{ path('pages', {'slug': 'creation'}) }}"
                         rel="noopener">Творчество</a>
                 </li>
                 <li class="nav-item col-6 col-lg-auto">
@@ -131,7 +131,6 @@
                 </li>
             </ul>
 
-
         </nav>
     </header>
     {% endblock %}
@@ -140,7 +139,7 @@
     {# <div class="row content">
         {{ include('views/home.html.twig') }} #}
         {# {{ render(controller('App\\Controller\\Home::pages')) }} #}
-    </div>
+    {# </div> #}
     {% endblock %}
 
     {% block footer %}

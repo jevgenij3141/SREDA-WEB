@@ -1,10 +1,22 @@
 // all used colors 
 $bg: #efefef;
 
+// Text color light
+$text_color_light: #ffffff;
+
+// Main menu, submenu background
 $main: #0457ac;
+
+// Form background 
 $ocean: #308fac;
+
+// Primary button background 
 $spring: #37bd79;
+
+// Secondary button background 
 $middle_spring: #a7e237;
+
+// Information button background 
 $summer: #f4e604;
 
 body {
@@ -30,5 +42,13 @@ header{
                 padding: 0 14px;
             }
         }
+    }
+}
+
+.form-container{
+    background: $spring;
+
+    H2{
+        color: $text_color_light;
     }
 }

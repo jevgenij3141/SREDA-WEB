@@ -2,7 +2,7 @@ home:
     path: /
     controller: App\Controller\Home::index
 
-creation:
+pages:
     path: /{slug}
     controller: App\Controller\Home::pages
     methods:    GET|HEAD
