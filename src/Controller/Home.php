@@ -12,7 +12,7 @@ class Home extends AbstractController
 {
     public function index(Request $request): Response
     {
-        return $this->render('index.html.twig');
+        return $this->render('views/home.html.twig');
     }
 
     public function pages(String $slug, ManagerRegistry $doctrine): Response{

@@ -112,7 +112,7 @@
 
             <ul class="navbar-nav d-flex ms-auto">
                 <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="{{ path('home') }}">Начало</a>
+                    <a class="nav-link py-2 px-0 px-lg-2" href="{{ path('pages', {'slug': 'home'}) }}">Начало</a>
                 </li>
                 <li class="nav-item col-6 col-lg-auto">
                     <a class="nav-link py-2 px-0 px-lg-2" href="{{ path('pages', {'slug': 'creation'}) }}"
@@ -151,9 +151,19 @@
     {% endblock %}
 
     {% block footer %}
-    <div class="row footer">
-        footer
-    </div>
+    <footer>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col">
+                    <p>@2022 Дизайн и разработка Евгений Среда</p>
+                </div>
+
+                <div class="col">Network</div>
+
+                <div class="col">Contact me</div>
+            </div>
+        </div>
+    </footer>
     {% endblock %}
 </body>
 

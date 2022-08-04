@@ -1,6 +1,7 @@
 home:
     path: /
     controller: App\Controller\Home::index
+    methods:    GET|HEAD
 
 pages:
     path: /{slug}
