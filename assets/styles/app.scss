@@ -1,11 +1,32 @@
+// // all used colors 
+// $background_color: #f8f8f8;
+
+// // Text color light
+// $text_color_light: #ffffff;
+
+// // Footer, head background
+// $primary: #050A30;
+
+// // Form 1 background 
+// $ocean: #000C66;
+
+// // Form 2 background 
+// $spring: #0000FF;
+
+// // Secondary button background 
+// $middle_spring: #a7e237;
+
+// // Information button background 
+// $summer: #7EC8E3;
+
 // all used colors 
-$bg: #efefef;
+$background_color: #f8f8f8;
 
 // Text color light
 $text_color_light: #ffffff;
 
-// Main menu, submenu background
-$main: #0457ac;
+// Footer, head background
+$primary: #0457ac;
 
 // Form 1 background 
 $ocean: #308fac;
@@ -24,13 +45,14 @@ H1, H2, H3, H4, H5{
 }
 
 body {
-    background-color: $bg;
+    background-color: $background_color!important;
     margin:0;
 }
 
 header{
-    max-height: 62px;
-    background: $main;
+    max-height: 50px;
+    padding: 5px 0;
+    background: $primary;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%)!important;
 
     ul{
@@ -46,6 +68,15 @@ header{
                 padding: 0 14px;
             }
         }
+    }
+}
+
+footer{
+    background: $primary;
+
+    p{
+        color:$text_color_light;
+        opacity: 0.5;
     }
 }
 
