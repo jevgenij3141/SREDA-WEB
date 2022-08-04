@@ -37,8 +37,22 @@ $spring: #37bd79;
 // Secondary button background 
 $middle_spring: #a7e237;
 
+$middle_spring_hover: #baf846;
+
 // Information button background 
 $summer: #f4e604;
+
+// .btn-primary {
+//     background-color: $middle_spring;
+// }
+
+// .btn-primary:hover{
+//     background-color: $middle_spring_hover;
+// }
+
+.btn-primary {
+    --bs-btn-bg: $middle_spring!important;
+}
 
 H1, H2, H3, H4, H5{
     text-transform: uppercase;
