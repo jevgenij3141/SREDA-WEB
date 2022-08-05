@@ -16,8 +16,10 @@
 // // Secondary button background 
 // $middle_spring: #a7e237;
 
-// // Information button background 
-// $summer: #7EC8E3;
+// $middle_spring_hover: #baf846;
+
+// Information button background 
+$summer: #7EC8E3;
 
 // all used colors 
 $background_color: #f8f8f8;
@@ -36,22 +38,31 @@ $spring: #37bd79;
 
 // Secondary button background 
 $middle_spring: #a7e237;
+$middle_spring_shadown_btn_bottom: #90c52c;
+$middle_spring_shadown_btn_right: #9cd139;
 
 $middle_spring_hover: #baf846;
 
 // Information button background 
 $summer: #f4e604;
 
-// .btn-primary {
-//     background-color: $middle_spring;
-// }
-
-// .btn-primary:hover{
-//     background-color: $middle_spring_hover;
-// }
+.btn{
+    --bs-btn-border-width: 0px !important;
+    --bs-btn-font-size: 18px !important;
+    --bs-btn-focus-shadow-rgb: none!important;
+    --bs-btn-padding-x: 15px !important;
+    --bs-btn-padding-y: 6px !important;
+    --bs-btn-font-weight: 500 !important;
+}
 
 .btn-primary {
-    --bs-btn-bg: $middle_spring!important;
+    --bs-btn-bg: #{$middle_spring} !important;
+    --bs-btn-hover-bg: #{$middle_spring_hover} !important;
+    --bs-btn-active-bg: #{$middle_spring} !important;
+    --bs-btn-border-color: #{$middle_spring_hover} !important;
+    //--bs-btn-focus-shadow-rgb: #{$middle_spring_hover} !important;
+    border-bottom: 1px solid $middle_spring_shadown_btn_bottom !important;
+    border-right: 1px solid $middle_spring_shadown_btn_right !important;
 }
 
 H1, H2, H3, H4, H5{
