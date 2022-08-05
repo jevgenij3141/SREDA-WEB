@@ -1,26 +1,3 @@
-// // all used colors 
-// $background_color: #f8f8f8;
-
-// // Text color light
-// $text_color_light: #ffffff;
-
-// // Footer, head background
-// $primary: #050A30;
-
-// // Form 1 background 
-// $ocean: #000C66;
-
-// // Form 2 background 
-// $spring: #0000FF;
-
-// // Secondary button background 
-// $middle_spring: #a7e237;
-
-// $middle_spring_hover: #baf846;
-
-// Information button background 
-$summer: #7EC8E3;
-
 // all used colors 
 $background_color: #f8f8f8;
 
@@ -28,28 +5,53 @@ $background_color: #f8f8f8;
 $text_color_light: #ffffff;
 
 // Footer, head background
-$primary: #0457ac;
+$primary: #050A30;
 
 // Form 1 background 
-$ocean: #308fac;
+$ocean: #000C66;
 
 // Form 2 background 
-$spring: #37bd79;
+$spring: #0000FF;
 
 // Secondary button background 
-$middle_spring: #a7e237;
-$middle_spring_shadown_btn_bottom: #90c52c;
-$middle_spring_shadown_btn_right: #9cd139;
+$middle_spring: #7EC8E3;
 
-$middle_spring_hover: #baf846;
+$middle_spring_hover: #7EC8E3;
+$middle_spring_shadown_btn_bottom: #57b0d1;
+$middle_spring_shadown_btn_right: #66bedf;
 
 // Information button background 
-$summer: #f4e604;
+$summer: #7EC8E3;
 
-.btn{
+// // all used colors 
+// $background_color: #f8f8f8;
+
+// // Text color light
+// $text_color_light: #ffffff;
+
+// // Footer, head background
+// $primary: #0457ac;
+
+// // Form 1 background 
+// $ocean: #308fac;
+
+// // Form 2 background 
+// $spring: #37bd79;
+
+// // Secondary button background 
+// $middle_spring: #a7e237;
+
+// $middle_spring_hover: #baf846;
+// $middle_spring_shadown_btn_bottom: #90c52c;
+// $middle_spring_shadown_btn_right: #9cd139;
+
+// // Information button background 
+// $summer: #f4e604;
+
+.btn {
     --bs-btn-border-width: 0px !important;
     --bs-btn-font-size: 18px !important;
-    --bs-btn-focus-shadow-rgb: none!important;
+    --bs-btn-focus-shadow-rgb: none !important;
     --bs-btn-padding-x: 15px !important;
     --bs-btn-padding-y: 6px !important;
     --bs-btn-font-weight: 500 !important;
@@ -61,33 +63,44 @@ $summer: #f4e604;
     --bs-btn-active-bg: #{$middle_spring} !important;
     --bs-btn-border-color: #{$middle_spring_hover} !important;
     //--bs-btn-focus-shadow-rgb: #{$middle_spring_hover} !important;
-    border-bottom: 1px solid $middle_spring_shadown_btn_bottom !important;
-    border-right: 1px solid $middle_spring_shadown_btn_right !important;
+    border-bottom: 1px solid $middle_spring_shadown_btn_bottom  !important;
+    border-right: 1px solid $middle_spring_shadown_btn_right  !important;
 }
 
-H1, H2, H3, H4, H5{
+H1,
+H2,
+H3,
+H4,
+H5 {
     text-transform: uppercase;
 }
 
 body {
-    background-color: $background_color!important;
-    margin:0;
+    background-color: $background_color !important;
+    margin: 0;
 }
 
-header{
-    max-height: 50px;
-    padding: 5px 0;
-    background: $primary;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%)!important;
+.navbar-nav {
+    --bs-nav-link-color: $primary !important;
+}
 
-    ul{
+header {
+    height: 40px;
+    padding: 5px 0;
+    background: $text_color_light;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%) !important;
+
+    ul {
         display: inline;
-        li{
+
+        li {
             display: inline;
-            a{
+            font-weight: 600!important;
+
+            a {
                 color: #d2d2e3;
-                font-size: 16px!important;
-                font-family:Arial, Helvetica, sans-serif;
+                font-size: 16px !important;
+                font-family: Arial, Helvetica, sans-serif;
                 text-decoration: none;
                 line-height: 45px;
                 padding: 0 14px;
@@ -96,28 +109,32 @@ header{
     }
 }
 
-footer{
-    background: $primary;
+footer {
+    background: $ocean;
 
-    p{
-        color:$text_color_light;
+    p {
+        color: $text_color_light;
         opacity: 0.5;
     }
 }
 
-.form-1-container, .form-2-container{
+.form-1-container,
+.form-2-container {
     background: $ocean;
 
-    H2, H3, H4, H5{
+    H2,
+    H3,
+    H4,
+    H5 {
         color: $text_color_light;
     }
 }
 
-.form-2-container{
-    background: $spring;
+.form-2-container {
+    background: $ocean;
 }
 
-.skills{
+.skills {
     list-style: none;
     margin: 0;
     font-size: 16px;
@@ -125,11 +142,11 @@ footer{
     flex-wrap: wrap;
     padding: 0;
 
-    li{
+    li {
         background: $summer;
         padding: 0 10px;
         border-radius: 5px;
         line-height: 25px;
-        margin:4px 5px;
+        margin: 4px 5px;
     }
 }
