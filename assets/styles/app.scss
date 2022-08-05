@@ -16,7 +16,7 @@ $spring: #0000FF;
 // Secondary button background 
 $middle_spring: #7EC8E3;
 
-$middle_spring_hover: #7EC8E3;
+$middle_spring_hover: #8ad7f3;
 $middle_spring_shadown_btn_bottom: #57b0d1;
 $middle_spring_shadown_btn_right: #66bedf;
 
@@ -51,7 +51,7 @@ $summer: #7EC8E3;
 .btn {
     --bs-btn-border-width: 0px !important;
     --bs-btn-font-size: 18px !important;
-    --bs-btn-focus-shadow-rgb: none !important;
+    --bs-btn-focus-shadow-rgb: 126, 200, 227 !important;
     --bs-btn-padding-x: 15px !important;
     --bs-btn-padding-y: 6px !important;
     --bs-btn-font-weight: 500 !important;
@@ -88,8 +88,8 @@ header {
     height: 40px;
     padding: 5px 0;
     background: $text_color_light;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%) !important;
-
+    box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%) !important;
+    
     ul {
         display: inline;
 
