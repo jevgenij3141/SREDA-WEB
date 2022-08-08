@@ -1,5 +1,5 @@
 // all used colors 
-$background_color: #f8f8f8;
+$background_color: #b5e9dc;
 
 // Text color light
 $text_color_light: #ffffff;
@@ -8,20 +8,22 @@ $text_color_light: #ffffff;
 $primary: #050A30;
 
 // Form 1 background 
-$ocean: #000C66;
+$ocean: #1f546d;
 
 // Form 2 background 
-$spring: #0000FF;
+$spring: #001f25;
 
 // Secondary button background 
-$middle_spring: #7EC8E3;
+$middle_spring: #c23a3e;
 
 $middle_spring_hover: #8ad7f3;
 $middle_spring_shadown_btn_bottom: #57b0d1;
 $middle_spring_shadown_btn_right: #66bedf;
 
 // Information button background 
-$summer: #7EC8E3;
+$summer: #a6a5ae;
+
+// ----------------------------------------------------------
 
 // // all used colors 
 // $background_color: #f8f8f8;
@@ -30,23 +32,23 @@ $summer: #7EC8E3;
 // $text_color_light: #ffffff;
 
 // // Footer, head background
-// $primary: #0457ac;
+// $primary: #050A30;
 
 // // Form 1 background 
-// $ocean: #308fac;
+// $ocean: #000C66;
 
 // // Form 2 background 
-// $spring: #37bd79;
+// $spring: #0000FF;
 
 // // Secondary button background 
-// $middle_spring: #a7e237;
+// $middle_spring: #7EC8E3;
 
-// $middle_spring_hover: #baf846;
-// $middle_spring_shadown_btn_bottom: #90c52c;
-// $middle_spring_shadown_btn_right: #9cd139;
+// $middle_spring_hover: #8ad7f3;
+// $middle_spring_shadown_btn_bottom: #57b0d1;
+// $middle_spring_shadown_btn_right: #66bedf;
 
 // // Information button background 
-// $summer: #f4e604;
+// $summer: #7EC8E3;
 
 .btn {
     --bs-btn-border-width: 0px !important;
