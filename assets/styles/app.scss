@@ -1,32 +1,5 @@
-// all used colors 
-$background_color: #b5e9dc;
-
-// Text color light
-$text_color_light: #ffffff;
-
-// Footer, head background
-$primary: #050A30;
-
-// Form 1 background 
-$ocean: #1f546d;
-
-// Form 2 background 
-$spring: #001f25;
-
-// Secondary button background 
-$middle_spring: #c23a3e;
-
-$middle_spring_hover: #8ad7f3;
-$middle_spring_shadown_btn_bottom: #57b0d1;
-$middle_spring_shadown_btn_right: #66bedf;
-
-// Information button background 
-$summer: #a6a5ae;
-
-// ----------------------------------------------------------
-
 // // all used colors 
-// $background_color: #f8f8f8;
+// $background_color: #b5e9dc;
 
 // // Text color light
 // $text_color_light: #ffffff;
@@ -35,20 +8,47 @@ $summer: #a6a5ae;
 // $primary: #050A30;
 
 // // Form 1 background 
-// $ocean: #000C66;
+// $ocean: #1f546d;
 
 // // Form 2 background 
-// $spring: #0000FF;
+// $spring: #001f25;
 
 // // Secondary button background 
-// $middle_spring: #7EC8E3;
+// $middle_spring: #c23a3e;
 
-// $middle_spring_hover: #8ad7f3;
-// $middle_spring_shadown_btn_bottom: #57b0d1;
-// $middle_spring_shadown_btn_right: #66bedf;
+// $middle_spring_hover: #d8454a;
+// $middle_spring_shadown_btn_bottom: #b43236;
+// $middle_spring_shadown_btn_right: #ac3337;
 
 // // Information button background 
-// $summer: #7EC8E3;
+// $summer: #a6a5ae;
+
+// ----------------------------------------------------------
+
+// all used colors 
+$background_color: #f8f8f8;
+
+// Text color light
+$text_color_light: #ffffff;
+
+// Footer, head background
+$primary: #050A30;
+
+// Form 1 background 
+$ocean: #000C66;
+
+// Form 2 background 
+$spring: #0000FF;
+
+// Secondary button background 
+$middle_spring: #7EC8E3;
+
+$middle_spring_hover: #8ad7f3;
+$middle_spring_shadown_btn_bottom: #57b0d1;
+$middle_spring_shadown_btn_right: #66bedf;
+
+// Information button background 
+$summer: #7EC8E3;
 
 .btn {
     --bs-btn-border-width: 0px !important;
@@ -83,14 +83,13 @@ body {
 }
 
 .navbar-nav {
-    --bs-nav-link-color: $primary !important;
+    --bs-nav-link-color: #{$primary} !important;
+    --bs-navbar-hover-color: #{$middle_spring_hover} !important;
 }
 
 header {
-    height: 40px;
-    padding: 5px 0;
     background: $text_color_light;
-    box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%) !important;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%) !important;
     
     ul {
         display: inline;
@@ -104,8 +103,6 @@ header {
                 font-size: 16px !important;
                 font-family: Arial, Helvetica, sans-serif;
                 text-decoration: none;
-                line-height: 45px;
-                padding: 0 14px;
             }
         }
     }

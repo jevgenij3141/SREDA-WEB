@@ -9,9 +9,6 @@
     {{ encore_entry_link_tags('app') }}
 
     <link rel="stylesheet" href="/css/bootstrap.css">
-
-    <!-- Renders a link tag (if your module requires any CSS)
-                 <link rel="stylesheet" href="/build/app.css"> -->
     {% endblock %}
 </head>
 
@@ -19,155 +16,133 @@
     {% block header %}
     <header class="navbar navbar-expand-lg navbar-dark bd-navbar sticky-top">
         <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
-            <a class="navbar-brand p-0 me-0 me-lg-2">
-                <svg class="site-logo" width="316" height="34" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 2736.76 296.53">
-                    <defs>
-                        <style>
-                            .cls-4 {
-                                fill: #25334d
-                            }
 
-                            .cls-5 {
-                                fill: #ffffff
-                            }
-                        </style>
-                    </defs>
-                    <path fill="#0eb1d2"
-                        d="M360.33 91.19l-42.49-45.34-12.3-13.13-12.31 13.13-15.09 16.11 27.4 87.7 34.01-36.29 20.78-22.18z">
-                    </path>
-                    <path fill="#8c63ef"
-                        d="M271.53 113.37l-20.79-22.18-42.49-45.34-12.3-13.13-12.31 13.13-15.09 16.11 27.4 87.7 29.26 31.23 25.53 27.25 25.53-27.25 29.27-31.23-34.01-36.29z">
-                    </path>
-                    <path fill="#1e64ff"
-                        d="M161.94 113.37l-20.79-22.18-42.49-45.34-12.3-13.13-12.31 13.13-42.49 45.34 20.79 22.18 34.01 36.29 29.26 31.23 25.53 27.25 25.53-27.25 29.27-31.23-34.01-36.29z">
-                    </path>
-                    <path class="cls-4"
-                        d="M141.15 91.19l20.79 22.18 34.01 36.29-27.4-87.7-27.4 29.23zM250.74 91.19l20.79 22.18 34.01 36.29-27.4-87.7-27.4 29.23z">
-                    </path>
-                    <path class="cls-5"
-                        d="M611.18 32.72l-42.02 119.25-39.92-119.23h-20.01l-42.25 119.23-39.14-119.25h-36.25l60.94 175.2h25.74l40.19-111.11 38.35 111.11h25.74l64.88-175.2h-36.25zM687.48 90.51c-13.66 0-29.42 2.89-42.82 16-8.14 8.14-17.33 22.06-17.33 44.65 0 17.87 5.25 32.58 17.86 44.4 11.29 10.77 25.22 16 43.6 16 39.67 0 52.54-27.06 56-35.46l-29.42-4.73c-5.25 9.19-14.45 15-26.53 15-12.34 0-19.44-6-22.85-10.77-3.68-5-5.52-12.34-5.52-19.17h85.11v-2.63c0-12.34-1.58-30.2-13.66-44.65-7.92-9.45-21.33-18.64-44.44-18.64zm-26 45.44a26.77 26.77 0 0126.8-22.85c11.82 0 24.42 7.35 27.05 22.85zM833.49 90.51c-9.72 0-25.74 2.62-37 18.38V32.72h-32v175.2h32v-14.71c12.35 17.08 28.9 18.39 36.25 18.39 33.62 0 56.74-26 56.74-60.68-.04-34.41-22.37-60.41-55.99-60.41zm-8.67 92.72c-18.39 0-31.52-14.18-31.52-32.31s13.13-32 31.52-32 31.52 13.92 31.52 32-13.13 32.31-31.52 32.31zM954.27 135.43l-7.61-2.37c-8.93-2.89-10.25-7.36-10.25-10.24 0-5.52 4.73-9.2 12.35-9.2 3.41 0 11 .53 18.65 7.62l15.76-18.65a56.75 56.75 0 00-36.25-12.08c-9.19 0-20.75 1-29.68 8.14a33.78 33.78 0 00-11.82 25.74 30.49 30.49 0 008.66 21.8c6.83 7.1 16.29 10.77 24.43 13.66l7.36 2.63c4.2 1.58 10 4.47 10 11.56 0 7.88-6.83 12.34-15.76 12.34-9.46 0-18.91-5.78-25.22-13.13l-16.81 19.44c7.09 7.61 20.49 18.91 44.13 18.91 13.92 0 24.95-3.68 34.15-12.08a37.83 37.83 0 0012.64-28.9 33 33 0 00-5.78-18.91c-6.62-8.93-20.02-13.4-28.95-16.28zM1026.63 32.74a19.18 19.18 0 1019.18 19.17 19.28 19.28 0 00-19.18-19.17zM1010.61 94.19h32.05v113.74h-32.05zM1108.98 55.31h-32.05v38.88h-12.61v27.31h12.61v86.42h32.05V121.5h22.06V94.19h-22.06V55.31zM1196.42 90.51c-13.66 0-29.42 2.89-42.82 16-8.14 8.14-17.33 22.06-17.33 44.65 0 17.87 5.25 32.58 17.86 44.4 11.29 10.77 25.22 16 43.6 16 39.67 0 52.54-27.06 56-35.46l-29.42-4.73c-5.25 9.19-14.45 15-26.53 15-12.34 0-19.44-6-22.85-10.77-3.68-5-5.52-12.34-5.52-19.17h85.11v-2.63c0-12.34-1.58-30.2-13.66-44.65-7.93-9.45-21.33-18.64-44.44-18.64zm-26 45.44a26.77 26.77 0 0126.8-22.85c11.82 0 24.42 7.35 27 22.85zM1359 114.41c4.72-2.63 19.7-11.82 19.7-34.41 0-14.71-6-28.37-16.29-36.25-14.18-11-33.1-11-42.81-11h-43.35v175.2h58.84c15.24 0 31.26-2.63 44.39-14.18 12.09-10.77 15-25.22 15-35.46 0-9.2-2.1-22.85-12.61-32.84a41.24 41.24 0 00-22.87-11.06zm-48.6-53.85h10c13.92 0 26.27 6 26.27 22.07 0 22.32-21.28 22.85-26.53 22.85h-9.72zm38.09 114.79c-7.62 4.47-17.07 4.73-23.38 4.73h-14.71v-48.33h12.6c7.35 0 16 0 23.38 3.41 11 5 12.87 14.45 12.87 20 0 6.84-2.37 15.2-10.77 20.19zM1488.7 158.54c0 6-.52 14.18-6.83 20a25.83 25.83 0 01-32.57 0c-6.3-5.78-6.83-13.92-6.83-20V94.19h-32v69.6c0 10.25 1.32 23.91 13.93 34.94 10.5 9.19 27.31 12.87 41.24 12.87s30.73-3.68 41.23-12.87c12.61-11 13.93-24.69 13.93-34.94v-69.6h-32zM1558.6 32.74a19.18 19.18 0 1019.18 19.17 19.28 19.28 0 00-19.18-19.17zM1542.58 94.19h32.05v113.74h-32.05zM1599.3 32.72h32.05v175.2h-32.05zM1743.21 108.89c-10.77-16.81-27.84-18.38-36.51-18.38-33.62 0-56.47 26.79-56.47 60.41 0 33.36 23.11 60.68 58 60.68 8.14 0 23.37-1.84 34.93-18.39v14.71h32V32.72h-32zm-28.37 74.34c-18.38 0-31.52-14.18-31.52-32.31s13.14-32 31.52-32 31.52 13.92 31.52 32-13.13 32.31-31.52 32.31zM1854.28 90.51c-13.65 0-29.41 2.89-42.81 16-8.14 8.14-17.34 22.06-17.34 44.65 0 17.87 5.26 32.58 17.87 44.4 11.29 10.77 25.21 16 43.6 16 39.66 0 52.53-27.06 56-35.46l-29.42-4.73c-5.26 9.19-14.45 15-26.53 15-12.35 0-19.44-6-22.85-10.77-3.68-5-5.52-12.34-5.52-19.17h85.11v-2.63c0-12.34-1.58-30.2-13.66-44.65-7.93-9.45-21.33-18.64-44.45-18.64zm-26 45.44c2.63-15.24 15-22.85 26.79-22.85s24.43 7.35 27.06 22.85zM2018.79 207.92h97.19V178.5h-63.04v-47.8h60.41v-29.42h-60.41V62.14h63.04V32.72h-97.19v175.2zM2250.19 94.23h-36.72l-21.46 29.41-20.97-29.41h-36.72l39.58 51.72-49.12 61.97h37.2l30.03-39.65 29.57 39.65h37.19l-48.87-61.97 40.29-51.72zM2338.92 90.51c-21 0-32 11.29-37 18.38v-14.7h-32v173.88h32v-74.86c12.6 17.08 28.63 18.39 36.51 18.39 16.81 0 29.94-6.57 38.61-14.71 6.57-6.31 17.86-20.23 17.86-46 0-22.59-8.67-36.77-17.07-45.18-12.9-12.84-28.93-15.2-38.91-15.2zm12.87 84.58c-4.2 3.94-11 8.14-21.54 8.14a31.12 31.12 0 01-21-7.62c-6.3-5.51-10.51-14.18-10.51-24.69s3.68-18.39 10.77-24.43c5.78-5.25 12.35-7.61 20.75-7.61a33.47 33.47 0 0121.81 8.14c6.3 6 9.72 15.5 9.72 23.9s-3.17 17.86-10 24.17zM2468.1 90.51c-13.66 0-29.42 2.89-42.81 16-8.15 8.14-17.34 22.06-17.34 44.65 0 17.87 5.25 32.58 17.86 44.4 11.3 10.77 25.22 16 43.61 16 39.66 0 52.53-27.06 55.94-35.46l-29.42-4.73c-5.25 9.19-14.44 15-26.52 15-12.35 0-19.44-6-22.86-10.77-3.67-5-5.51-12.34-5.51-19.17h85.1v-2.63c0-12.34-1.57-30.2-13.66-44.65-7.88-9.45-21.27-18.64-44.39-18.64zm-26 45.44a26.75 26.75 0 0126.79-22.85c11.82 0 24.43 7.35 27.05 22.85zM2588.36 95.5c-2.36 1.31-9.19 6-14.18 15.76V94.19h-32v113.73h32v-54.63c0-7.88.26-17.6 6.3-25.22 6.3-7.88 15.24-9.19 21.28-9.19 6.56 0 10.77 1.31 15 4.2l4.2-29.95a39.52 39.52 0 00-13.66-2.62c-7.64 0-13.95 1.84-18.94 4.99zM2678.67 94.19V55.31h-32.05v38.88h-12.61v27.31h12.61v86.42h32.05V121.5h22.06V94.19h-22.06zM1977.44 95.5c-2.36 1.31-9.19 6-14.18 15.76V94.19h-32v113.73h32v-54.63c0-7.88.26-17.6 6.3-25.22 6.31-7.88 15.24-9.19 21.28-9.19a34.59 34.59 0 015.85.44v-28.8h-.33c-7.62-.01-13.93 1.83-18.92 4.98z">
-                    </path>
-                </svg>
-            </a>
+            <div class="offcanvas-lg offcanvas-end flex-grow-1">
+                <div class="offcanvas-body p-4 pt-0 p-lg-0">
 
-            <ul class="navbar-nav d-flex me-auto">
-                <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/twbs" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg"
-                            viewBox="0 0 512 499.36" role="img">
-                            <title>GitHub</title>
-                            <path fill="currentColor" fill-rule="evenodd"
-                                d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z">
-                            </path>
-                        </svg>
-                        <small class="d-lg-none ms-2">GitHub</small>
+                    <a class="navbar-brand" style="color:#000;">
+                        SREDA
                     </a>
-                </li>
-                <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="https://twitter.com/getbootstrap" target="_blank"
-                        rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg"
-                            viewBox="0 0 512 416.32" role="img">
-                            <title>Twitter</title>
-                            <path fill="currentColor"
-                                d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92">
-                            </path>
-                        </svg>
-                        <small class="d-lg-none ms-2">Twitter</small>
-                    </a>
-                </li>
-                <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="https://bootstrap-slack.herokuapp.com" target="_blank"
-                        rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg"
-                            viewBox="0 0 512 512" role="img">
-                            <title>Slack</title>
-                            <path fill="currentColor" d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z">
-                            </path>
-                            <path fill="currentColor"
-                                d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z">
-                            </path>
-                        </svg>
-                        <small class="d-lg-none ms-2">Slack</small>
-                    </a>
-                </li>
-                <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="https://opencollective.com/bootstrap" target="_blank"
-                        rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            fill-rule="evenodd" class="navbar-nav-svg" viewBox="0 0 40 41" role="img">
-                            <title>Open Collective</title>
-                            <path fill-opacity=".4"
-                                d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z">
-                            </path>
-                            <path
-                                d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z">
-                            </path>
-                        </svg>
-                        <small class="d-lg-none ms-2">Open Collective</small>
-                    </a>
-                </li>
-            </ul>
 
-            <ul class="navbar-nav d-flex ms-auto">
-                <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="{{ path('pages', {'slug': 'home'}) }}">Начало</a>
-                </li>
-                <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="{{ path('pages', {'slug': 'creation'}) }}"
-                        rel="noopener">Творчество</a>
-                </li>
-                <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="https://themes.getbootstrap.com/"
-                        rel="noopener">Медиа</a>
-                </li>
-                <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="https://themes.getbootstrap.com/"
-                        rel="noopener">Проекты</a>
-                </li>
-                <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="https://themes.getbootstrap.com/"
-                        rel="noopener">Развитие</a>
-                </li>
-                <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="https://blog.getbootstrap.com/" rel="noopener">Обо
-                        мне</a>
-                </li>
-                <li class="nav-item col-6 col-lg-auto">
-                    <a class="nav-link py-2 px-0 px-lg-2" href="/docs/5.2/getting-started/introduction/">Контакты</a>
-                </li>
-                <li class="nav-item py-1 col-12 col-lg-auto">
-                    <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
-                    <hr class="d-lg-none text-white-50">
-                </li>
-                <li class="nav-item dropdown">
-                    <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
-                      <span class="d-lg-none" aria-hidden="true">Bootstrap</span><span class="visually-hidden">Bootstrap&nbsp;</span> v5.2 <span class="visually-hidden">(switch to other versions)</span>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                      <li><h6 class="dropdown-header">v5 releases</h6></li>
-                      <li>
-                        <a class="dropdown-item current" aria-current="true" href="/">
-                          Latest (5.2.x)
-                        </a>
-                      </li>
-                      <li>
-                          <a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/">v5.1.3</a>
-                      </li>
-                      <li>
-                          <a class="dropdown-item" href="https://getbootstrap.com/docs/5.0/">v5.0.2</a>
-                      </li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><h6 class="dropdown-header">Previous releases</h6></li>
-                      <li><a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">v4.6.x</a></li>
-                      <li><a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a></li>
-                      <li><a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
+                    <ul class="navbar-nav d-flex me-auto">
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/twbs" target="_blank"
+                                rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg"
+                                    viewBox="0 0 512 499.36" role="img">
+                                    <title>GitHub</title>
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z">
+                                    </path>
+                                </svg>
+                                <small class="d-lg-none ms-2">GitHub</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="https://twitter.com/getbootstrap"
+                                target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg"
+                                    viewBox="0 0 512 416.32" role="img">
+                                    <title>Twitter</title>
+                                    <path fill="currentColor"
+                                        d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92">
+                                    </path>
+                                </svg>
+                                <small class="d-lg-none ms-2">Twitter</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="https://bootstrap-slack.herokuapp.com"
+                                target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg"
+                                    viewBox="0 0 512 512" role="img">
+                                    <title>Slack</title>
+                                    <path fill="currentColor"
+                                        d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z">
+                                    </path>
+                                    <path fill="currentColor"
+                                        d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z">
+                                    </path>
+                                </svg>
+                                <small class="d-lg-none ms-2">Slack</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="https://opencollective.com/bootstrap"
+                                target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    fill-rule="evenodd" class="navbar-nav-svg" viewBox="0 0 40 41" role="img">
+                                    <title>Open Collective</title>
+                                    <path fill-opacity=".4"
+                                        d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z">
+                                    </path>
+                                    <path
+                                        d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z">
+                                    </path>
+                                </svg>
+                                <small class="d-lg-none ms-2">Open Collective</small>
+                            </a>
+                        </li>
                     </ul>
-                  </li>
-            </ul>
+
+                    <ul class="navbar-nav d-flex ms-auto">
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2"
+                                href="{{ path('pages', {'slug': 'home'}) }}">Начало</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="{{ path('pages', {'slug': 'creation'}) }}"
+                                rel="noopener">Творчество</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="https://themes.getbootstrap.com/"
+                                rel="noopener">Медиа</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="https://themes.getbootstrap.com/"
+                                rel="noopener">Проекты</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="https://themes.getbootstrap.com/"
+                                rel="noopener">Развитие</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2" href="https://blog.getbootstrap.com/"
+                                rel="noopener">Обо
+                                мне</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link py-2 px-0 px-lg-2"
+                                href="/docs/5.2/getting-started/introduction/">Контакты</a>
+                        </li>
+                        <li class="nav-item py-1 col-12 col-lg-auto">
+                            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                            <hr class="d-lg-none text-white-50">
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                                <span class="d-lg-none" aria-hidden="true">Bootstrap</span><span
+                                    class="visually-hidden">Bootstrap&nbsp;</span> Rus <span
+                                    class="visually-hidden">(switch to other versions)</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item current" aria-current="true" href="/">
+                                        Rus
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/">Lt</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://getbootstrap.com/docs/5.0/">Eng</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     {% endblock %}
@@ -194,6 +169,9 @@
         </div>
     </footer>
     {% endblock %}
+
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>
