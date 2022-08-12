@@ -149,3 +149,9 @@ footer {
         margin: 4px 5px;
     }
 }
+
+.nav-item.lang{
+    button, a{
+        text-transform: uppercase!important;
+    }
+}
