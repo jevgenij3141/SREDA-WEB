@@ -50,6 +50,28 @@ $summer: #a6a5ae;
 // // Information button background 
 // $summer: #7EC8E3;
 
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #{$text_color_light} !important;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #{$middle_spring} !important;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
 .btn {
     --bs-btn-border-width: 0px !important;
     --bs-btn-font-size: 18px !important;
