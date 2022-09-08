@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="/css/bootstrap.css">
     {% endblock %}
+
 </head>
 
 <body>
@@ -146,6 +147,8 @@
         </nav>
     </header>
 
+    <div class="navbar-space"></div>
+
     {% endblock %}
 
     {% block content %}
@@ -170,9 +173,13 @@
         </div>
     </footer>
     {% endblock %}
-
+        
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
 </body>
 
 </html>

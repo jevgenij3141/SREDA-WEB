@@ -21,7 +21,7 @@ $middle_spring_shadown_btn_bottom: #b43236;
 $middle_spring_shadown_btn_right: #ac3337;
 
 // Information button background 
-$summer: #a6a5ae;
+$summer: #dfdfdf;
 
 // ----------------------------------------------------------
 
@@ -50,6 +50,28 @@ $summer: #a6a5ae;
 // // Information button background 
 // $summer: #7EC8E3;
 
+.navbar{
+    background: none;
+    border-bottom: none;
+    padding: 28px 0 18px 0!important;
+    position: fixed!important;
+    width:100%!important;
+}
+
+.navbar-space{
+    width:100%;
+    height:70px;
+}
+
+html:not([data-scroll='0']) {
+  
+    .navbar{
+        padding: 0 0!important;
+        background: #fff;
+        border-bottom: 1px solid #{$summer} !important;;
+    }
+    
+  }
 
 /* width */
 ::-webkit-scrollbar {
