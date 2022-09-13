@@ -4,7 +4,11 @@ import $ from 'jquery';
 import './styles/app.scss';
 
 const storeScroll = () => {
-    document.documentElement.dataset.scroll = window.scrollY;
+    var scrollY = 0;
+    if(window.scrollY > 40){
+        scrollY = 1;
+    }
+    document.documentElement.dataset.scroll = scrollY;
 };
 
 document.addEventListener('scroll', storeScroll);

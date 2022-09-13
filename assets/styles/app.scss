@@ -54,7 +54,7 @@ $summer: #dfdfdf;
     background: none;
     border-bottom: none;
     padding: 28px 0 18px 0!important;
-    position: fixed!important;
+    position: absolute!important;
     width:100%!important;
 }
 
@@ -66,9 +66,11 @@ $summer: #dfdfdf;
 html:not([data-scroll='0']) {
   
     .navbar{
-        padding: 0 0!important;
+        position: fixed!important;
+        padding: 7px 0!important;
         background: #fff;
-        border-bottom: 1px solid #{$summer} !important;;
+        border-bottom: 1px solid #{$summer} !important;
+        //box-shadow: 0 1px 10px rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%) !important;
     }
     
   }
