@@ -70,8 +70,8 @@ html:not([data-scroll='0']) {
         position: fixed!important;
         padding: 7px 0!important;
         background: #fff;
-        border-bottom: 1px solid #{$summer} !important;
-        //box-shadow: 0 1px 10px rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%) !important;
+        // border-bottom: 1px solid #{$summer} !important;
+        box-shadow: 0 1px 10px rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%) !important;
     }
     
   }
@@ -132,6 +132,10 @@ body {
 .navbar-nav {
     --bs-nav-link-color: #{$primary} !important;
     --bs-navbar-hover-color: #{$middle_spring_hover} !important;
+}
+
+.dropdown-menu {
+    --bs-dropdown-min-width: 65px !important;
 }
 
 header {
