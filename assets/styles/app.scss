@@ -6,12 +6,13 @@ $text_color_light: #ffffff;
 
 // Footer, head background
 $primary: #050A30;
+$footer: #081906;
 
 // Form 1 background 
-$ocean: #1f546d;
+$ocean: #1f6d54;
 
 // Form 2 background 
-$spring: #001f25;
+$spring: #cecece;
 
 // Secondary button background 
 $middle_spring: #c23a3e;
@@ -156,7 +157,7 @@ header {
 }
 
 footer {
-    background: $ocean;
+    background: $footer;
 
     p {
         color: $text_color_light;
