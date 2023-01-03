@@ -100,10 +100,15 @@ html:not([data-scroll='0']) {
 .btn {
     --bs-btn-border-width: 0px !important;
     --bs-btn-font-size: 18px !important;
-    --bs-btn-focus-shadow-rgb: 126, 200, 227 !important;
+    /*--bs-btn-focus-shadow-rgb: 126, 200, 227 !important;*/
     --bs-btn-padding-x: 15px !important;
     --bs-btn-padding-y: 6px !important;
     --bs-btn-font-weight: 500 !important;
+    border-radius: 0px !important;
+    border-top: 1px solid #f9c5c6 !important;
+    border-left: 1px solid #ffdbdb !important;
+    border-bottom: 1px solid #6e1d1f !important;
+    border-right: 1px solid #6a0a0d !important;
 }
 
 .btn-primary {
