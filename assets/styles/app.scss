@@ -24,6 +24,11 @@ $middle_spring_shadown_btn_right: #ac3337;
 // Information button background 
 $summer: #dfdfdf;
 
+$border3d1_top: 1px solid #eeeeee !important;
+$border3d1_left: 1px solid #ffffff !important;
+$border3d1_bottom: 1px solid #6b6b6b !important;
+$border3d1_right: 1px solid #4b4b4b !important;
+
 
 // // all used colors 
 // $background_color: #b5e9dc;
@@ -138,6 +143,10 @@ html:not([data-scroll='0']) {
     border-right: 1px solid #6a0a0d !important;
 }
 
+.btn-no-border{
+    border: 0!important;
+}
+
 .btn-primary {
     --bs-btn-bg: #{$middle_spring} !important;
     --bs-btn-hover-bg: #{$middle_spring_hover} !important;
@@ -211,6 +220,10 @@ footer {
     H5 {
         color: $text_color_light;
     }
+
+    p{
+        color:#fff;
+    }
 }
 
 .form-2-container {
@@ -228,9 +241,13 @@ footer {
     li {
         background: $summer;
         padding: 0 10px;
-        border-radius: 5px;
+        border-radius: 0px;
         line-height: 25px;
         margin: 4px 5px;
+        border-top: #{$border3d1_top};
+        border-left: #{$border3d1_left};
+        border-bottom: #{$border3d1_bottom};
+        border-right: #{$border3d1_right};
     }
 }
 
