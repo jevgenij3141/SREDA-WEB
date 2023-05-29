@@ -47,6 +47,11 @@ class Pages
      */
     private $slug;
 
+    /**
+     * @ORM\Column(type="string", length=16)
+     */
+    private $type;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -120,6 +125,18 @@ class Pages
     public function setSlug(string $slug): self
     {
         $this->slug = $slug;
+
+        return $this;
+    }
+
+    public function getType(): ?string
+    {
+        return $this->type;
+    }
+
+    public function setType(string $type): self
+    {
+        $this->type = $type;
 
         return $this;
     }
