@@ -15,7 +15,7 @@ class Home extends AbstractController
         return $this->render('views/home.html.twig');
     }
 
-    public function pages(String $slug, ManagerRegistry $doctrine): Response{
+    public function page(String $slug, ManagerRegistry $doctrine): Response{
         $page = $doctrine->getRepository(Pages::class)->findOneBy(['slug' => $slug]);
 
         if ($page === null) {
@@ -30,20 +30,10 @@ class Home extends AbstractController
             return $this->render('views/gallery.html.twig', ['page' => $page]);
         }else if($type === 'page'){
             return $this->render('views/page.html.twig', ['page' => $page]);
+        }else if($type === 'page-submenu'){
+            return $this->render('views/page-submenu.html.twig', ['page' => $page]);
         }else{
             return $this->render('views/error.html.twig', ['page' => $page]);
         }
-    }
-
-    public function gallery(String $slug, ManagerRegistry $doctrine): Response{
-        $page = $doctrine->getRepository(Pages::class)->findOneBy(['slug' => $slug]);
-
-        if ($page === null) {
-            throw $this->createNotFoundException(
-                'No product found for id '
-            );
-        }
-
-        return $this->render('views/gallery.html.twig', ['page' => $page]);
     }
 }

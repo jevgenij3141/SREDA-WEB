@@ -10,7 +10,7 @@
                 (PHP/JS/HTML/CSS/MySQL) программист в Литве. Также веду
                 Youtube-канал, посвященный искусству веб-разработки и разработке 3D графике.</p>
 
-            <a href="{{ path('pages', {'slug': 'who-am-i'}) }}" class="btn btn-primary">Узнать больше</a>
+            <a href="{{ path('page', {'slug': 'who-am-i'}) }}" class="btn btn-primary">Узнать больше</a>
         </div>
         <div class="col">
             <div class="card">
@@ -27,7 +27,7 @@
     <div class="row"  data-masonry="{&quot;percentPosition&quot;: true }">
 
         <div class="col-sm-6 col-lg-4 mb-4">
-            <a href="{{ path('pages', {'slug': 'art'}) }}">
+            <a href="{{ path('page', {'slug': 'art'}) }}">
             <div class="card p-3">
                 <figure class="p-3 mb-0">
                 <blockquote class="blockquote">
@@ -55,16 +55,18 @@
         </div>
 
         <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card p-3">
-                <figure class="p-3 mb-0">
-                <blockquote class="blockquote">
-                    <h4>Программирование</h4>
-                </blockquote>
-                <figcaption class="blockquote-footer mb-0 text-body-secondary">
-                    Someone famous in <cite title="Source Title">Source Title</cite>
-                </figcaption>
-                </figure>
-            </div>
+            <a href="{{ path('page', {'slug': 'programming'}) }}">
+                <div class="card p-3">
+                    <figure class="p-3 mb-0">
+                    <blockquote class="blockquote">
+                        <h4>Программирование</h4>
+                    </blockquote>
+                    <figcaption class="blockquote-footer mb-0 text-body-secondary">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                    </figure>
+                </div>
+            </a>
         </div>
 
         <div class="col-sm-6 col-lg-4 mb-4">

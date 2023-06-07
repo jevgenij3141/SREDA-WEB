@@ -3,7 +3,7 @@ home:
     controller: App\Controller\Home::index
     methods:    GET|HEAD
 
-pages:
+page:
     path: /{slug}
-    controller: App\Controller\Home::pages
+    controller: App\Controller\Home::page
     methods:    GET|HEAD
