@@ -5,18 +5,56 @@
 	<div class="container">
 		<div class="row py-5">
 			<div class="col">
-				<H2>{{page.title}}</H2>
-				{{page.body}}
+				{# <H2>{{page.title}}</H2> #}
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
-		<div class="row py-5">
-			<div
-				class="col">
+		<div class="row">
+			<div class="col">
 
+				<div class="sub-content">
+					<div class="sub-sidebar d-flex flex-column flex-shrink-0">
+						<div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary">
+							<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+								<span class="fs-4">Sidebar</span>
+							</a>
+							<hr>
+							<ul class="nav nav-pills flex-column mb-auto">
+								<li class="nav-item">
+									<a href="#" class="nav-link active" aria-current="page">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="#" class="nav-link link-body-emphasis">
+										Dashboard
+									</a>
+								</li>
+								<li>
+									<a href="#" class="nav-link link-body-emphasis">
+										Orders
+									</a>
+								</li>
+								<li>
+									<a href="#" class="nav-link link-body-emphasis">
+										Products
+									</a>
+								</li>
+								<li>
+									<a href="#" class="nav-link link-body-emphasis">
+										Customers
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 
+					<div class="sub-main " d-flex flex-column">
+						{{page.body}}
+					</div>
+				</div>
 
 			</div>
 		</div>
