@@ -74,7 +74,6 @@ html:not([data-scroll='0']) {
     background: #555;
   }
 
-
 .btn {
     --bs-btn-border-width: 0px !important;
     --bs-btn-font-size: 18px !important;
@@ -245,10 +244,26 @@ footer {
 }
 
 .sub-sidebar{
-
-
+    min-width:275px;
 }
 
 .sub-main{
+    .nav-link.active{
+        border-radius: 0;
+        --bs-nav-pills-link-active-bg: #ff0000!important;
+    }
+}
 
+.nav-pills .nav-link {
+    border-radius: 0!important;
+}
+
+.nav-pills .nav-link.active{
+    background: $middle_spring!important;
+    color:$text_color_light;
+    border-radius: 0px;
+    border-top: #{$border3d1_top};
+    border-left: #{$border3d1_left};
+    border-bottom: #{$border3d1_bottom};
+    border-right: #{$border3d1_right};
 }

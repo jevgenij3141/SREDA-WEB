@@ -3,48 +3,55 @@
 {% block content %}
 
 	<div class="container">
-		<div class="row py-5">
-			<div class="col">
-				{# <H2>{{page.title}}</H2> #}
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
 		<div class="row">
 			<div class="col">
 
 				<div class="sub-content">
 					<div class="sub-sidebar d-flex flex-column flex-shrink-0">
 						<div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary">
-							<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-								<span class="fs-4">Sidebar</span>
+							<a href="/" class="text-decoration-none">
+								<span class="fs-3">OpenGL под Windows</span>
 							</a>
 							<hr>
 							<ul class="nav nav-pills flex-column mb-auto">
 								<li class="nav-item">
 									<a href="#" class="nav-link active" aria-current="page">
-										Home
+										1. Окно
 									</a>
 								</li>
 								<li>
 									<a href="#" class="nav-link link-body-emphasis">
-										Dashboard
+										2. Куб
 									</a>
 								</li>
 								<li>
 									<a href="#" class="nav-link link-body-emphasis">
-										Orders
+										3. Текстура
 									</a>
 								</li>
 								<li>
 									<a href="#" class="nav-link link-body-emphasis">
-										Products
+										4. Освещение
 									</a>
 								</li>
 								<li>
 									<a href="#" class="nav-link link-body-emphasis">
-										Customers
+										5. Загрузка модели
+									</a>
+								</li>
+								<li>
+									<a href="#" class="nav-link link-body-emphasis">
+										6. Текстура
+									</a>
+								</li>
+								<li>
+									<a href="#" class="nav-link link-body-emphasis">
+										7. Анимация
+									</a>
+								</li>
+								<li>
+									<a href="#" class="nav-link link-body-emphasis">
+										7. Скелетная анимация
 									</a>
 								</li>
 							</ul>
@@ -52,6 +59,7 @@
 					</div>
 
 					<div class="sub-main " d-flex flex-column">
+						{# <H2>{{page.title}}</H2> #}
 						{{page.body}}
 					</div>
 				</div>
