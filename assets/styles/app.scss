@@ -267,3 +267,11 @@ footer {
     border-bottom: #{$border3d1_bottom};
     border-right: #{$border3d1_right};
 }
+
+a {
+    --bs-link-color:$primary;
+}
+
+a.nav-link {
+    --bs-link-color:$primary;
+}

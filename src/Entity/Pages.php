@@ -52,6 +52,11 @@ class Pages
      */
     private $type;
 
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $parent_id;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -137,6 +142,18 @@ class Pages
     public function setType(string $type): self
     {
         $this->type = $type;
+
+        return $this;
+    }
+
+    public function getParentId(): ?int
+    {
+        return $this->parent_id;
+    }
+
+    public function setParentId(?int $parent_id): self
+    {
+        $this->parent_id = $parent_id;
 
         return $this;
     }
