@@ -133,8 +133,12 @@ header {
         display: inline;
 
         li {
+            padding-left:5px;
+            padding-right:5px;
             display: inline;
             font-weight: 600!important;
+            border-left: 1px solid #f1f1f1;
+            border-right: 1px solid #cecece;
 
             a {
                 color: #d2d2e3;
@@ -143,6 +147,33 @@ header {
                 text-decoration: none;
             }
         }
+
+        li:first-child{
+            border-left: none;
+        }
+
+        li.last{
+            border-right: none;
+        }
+
+        li.lang{
+            border-left: none;
+            border-right: none;
+        }
+
+        li.seperator{
+            border-right: none;
+            border-left: none;
+        }
+
+        .vr{
+            border:none!important;
+            background-color:inherit!important;
+        }
+    }
+
+    .social li{
+        border:none!important;
     }
 }
 
@@ -235,6 +266,25 @@ footer {
 .nav-item.lang{
     button, a{
         text-transform: uppercase!important;
+    }
+
+    li{
+        margin:0;
+        padding:0;
+        line-height: inherit;
+        display: inherit;
+        background: inherit;
+        border:0!important;
+    }
+
+    .dropdown-menu{
+        border-radius: 0!important;
+        padding: 0;
+        padding-top:-2px;
+    }
+
+    button{
+        padding: 0px 12px!important;
     }
 }
 
