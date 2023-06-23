@@ -31,7 +31,6 @@ $border3d1_right: 1px solid #4b4b4b !important;
 
 .navbar{
     background: none;
-    border-bottom: none;
     padding: 28px 0 18px 0!important;
     position: absolute!important;
     width:100%!important;
@@ -131,7 +130,7 @@ body {
 header {
     background: $text_color_light;
     // box-shadow: 0 1px 10px rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%) !important;
-    border-bottom: 1px solid #cecece;
+    border-bottom: 1px solid #cecece!important;
     
     ul {
         display: inline;
