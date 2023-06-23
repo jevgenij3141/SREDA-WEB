@@ -120,6 +120,10 @@ body {
     --bs-navbar-hover-color: #{$middle_spring_hover} !important;
 }
 
+.nav-item {
+    line-height: 15px !important;
+}
+
 .dropdown-menu {
     --bs-dropdown-min-width: 65px !important;
 }
@@ -324,4 +328,5 @@ a {
 
 a.nav-link {
     --bs-link-color:$primary;
+    font-size:15px!important;
 }
