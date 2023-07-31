@@ -5,7 +5,7 @@ import './styles/app.scss';
 
 const storeScroll = () => {
     var scrollY = 0;
-    if(window.scrollY > 40){
+    if(window.scrollY > 20){
         scrollY = 1;
     }
     document.documentElement.dataset.scroll = scrollY;

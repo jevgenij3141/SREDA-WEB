@@ -31,7 +31,7 @@ $border3d1_right: 1px solid #4b4b4b !important;
 
 .navbar{
     background: none;
-    padding: 28px 0 18px 0!important;
+    padding: 18px 0 18px 0!important;
     position: absolute!important;
     width:100%!important;
 }
@@ -48,10 +48,10 @@ html:not([data-scroll='0']) {
         padding: 7px 0!important;
         background: #fff;
         // border-bottom: 1px solid #{$summer} !important;
-        box-shadow: 0 1px 10px rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%) !important;
+        box-shadow: 0 1px 18px rgb(0 0 0 / 8%), inset 0 0px 0 rgb(0 0 0 / 8%) !important;
     }
     
-  }
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -80,11 +80,11 @@ html:not([data-scroll='0']) {
     --bs-btn-padding-x: 15px !important;
     --bs-btn-padding-y: 6px !important;
     --bs-btn-font-weight: 500 !important;
-    border-radius: 0px !important;
-    border-top: 1px solid #f9c5c6 !important;
+    border-radius: 9px!important;
+    /*border-top: 1px solid #f9c5c6 !important;
     border-left: 1px solid #ffdbdb !important;
     border-bottom: 1px solid #6e1d1f !important;
-    border-right: 1px solid #6a0a0d !important;
+    border-right: 1px solid #6a0a0d !important;*/
 }
 
 .btn-no-border{
@@ -97,8 +97,9 @@ html:not([data-scroll='0']) {
     --bs-btn-active-bg: #{$middle_spring} !important;
     --bs-btn-border-color: #{$middle_spring_hover} !important;
     //--bs-btn-focus-shadow-rgb: #{$middle_spring_hover} !important;
-    border-bottom: 1px solid $middle_spring_shadown_btn_bottom  !important;
-    border-right: 1px solid $middle_spring_shadown_btn_right  !important;
+    border-radius: 9px!important;
+    /*border-bottom: 1px solid $middle_spring_shadown_btn_bottom  !important;
+    border-right: 1px solid $middle_spring_shadown_btn_right  !important;*/
 }
 
 H1,
@@ -128,8 +129,8 @@ body {
 }
 
 header {
-    background: $text_color_light;
-    box-shadow: 0 1px 10px rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%) !important;
+    background: #fff!important;
+    /*box-shadow: 0 1px 10px rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%) !important;*/
     border-bottom: 1px solid #cecece!important;
     
     ul {
@@ -140,8 +141,8 @@ header {
             padding-right:5px;
             display: inline;
             font-weight: 600!important;
-            border-left: 1px solid #f1f1f1;
-            border-right: 1px solid #cecece;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #f0f0f0;
 
             a {
                 color: #d2d2e3;
@@ -223,46 +224,51 @@ footer {
         border-radius: 0px;
         line-height: 25px;
         margin: 4px 5px;
-        border-top: #{$border3d1_top};
+        border-radius: 9px!important;
+        /*border-top: #{$border3d1_top};
         border-left: #{$border3d1_left};
         border-bottom: #{$border3d1_bottom};
-        border-right: #{$border3d1_right};
+        border-right: #{$border3d1_right};*/
     }
 
     .btc3d-js{
         background: #057838!important;
         color: #fff !important;
-        border-top: 1px solid #acf1cb !important;
+        border-radius: 9px!important;
+        /*border-top: 1px solid #acf1cb !important;
         border-left: 1px solid #8ce1b1 !important;
         border-bottom: 1px solid #002e14 !important;
-        border-right: 1px solid #004a21!important;
+        border-right: 1px solid #004a21!important;*/
     }
 
     .btc3d-css{
         background: #f8cb00 !important;
         color: #fff !important;
-        border-top: 1px solid #fff5c9 !important;
+        border-radius: 9px!important;
+        /*border-top: 1px solid #fff5c9 !important;
         border-left: 1px solid #dfcf88 !important;
         border-bottom: 1px solid #322900 !important;
-        border-right: 1px solid #897002 !important;
+        border-right: 1px solid #897002 !important;*/
     }
 
     .btc3d-html{
         background: #f85b00 !important;
         color: #fff !important;
-        border-top: 1px solid #ffdfcc !important;
+        border-radius: 9px!important;
+        /*border-top: 1px solid #ffdfcc !important;
         border-left: 1px solid #e1aa8a !important;
         border-bottom: 1px solid #441900 !important;
-        border-right: 1px solid #813002 !important;
+        border-right: 1px solid #813002 !important*/
     }
 
     .btc3d-reactjs{
         background: #00bff8 !important;
         color: #fff !important;
-        border-top: 1px solid #d0f4ff !important;
+        border-radius: 9px!important;
+        /*border-top: 1px solid #d0f4ff !important;
         border-left: 1px solid #8acee3 !important;
         border-bottom: 1px solid #003646 !important;
-        border-right: 1px solid #007497 !important;
+        border-right: 1px solid #007497 !important;*/
     }
 }
 
@@ -302,7 +308,7 @@ footer {
 
 .sub-main{
     .nav-link.active{
-        border-radius: 0;
+        border-radius: 9px!important;
         --bs-nav-pills-link-active-bg: #ff0000!important;
     }
 
@@ -311,16 +317,17 @@ footer {
 
 .nav-pills .nav-link {
     border-radius: 0!important;
+    line-height: 24px;;
 }
 
 .nav-pills .nav-link.active{
     background: $middle_spring!important;
     color:$text_color_light;
-    border-radius: 0px;
-    border-top: #{$border3d1_top};
+    border-radius: 9px!important;
+    /*border-top: #{$border3d1_top};
     border-left: #{$border3d1_left};
     border-bottom: #{$border3d1_bottom};
-    border-right: #{$border3d1_right};
+    border-right: #{$border3d1_right};*/
 }
 
 a {
