@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  apache_sreda:
+    build: ./images/apache_bullseye
+    image: www_sreda/apache_bullseye
+    
+  php8.1:
+    build: ./images/php8.1/php
+    image: php_sreda/php8.1
+    depends_on:
+      - apache_sreda
+    environment:
+      DATABASE_URL: host.docker.internal

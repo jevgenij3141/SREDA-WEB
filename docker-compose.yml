@@ -1,21 +1,56 @@
-version: '3'
+version: '2'
 
 services:
-###> doctrine/doctrine-bundle ###
-  database:
-    image: postgres:${POSTGRES_VERSION:-13}-alpine
-    environment:
-      POSTGRES_DB: ${POSTGRES_DB:-app}
-      # You should definitely change the password in production
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-ChangeMe}
-      POSTGRES_USER: ${POSTGRES_USER:-symfony}
+  www_sreda:
+    image: php_sreda/php8.1
+    
+    build: ./.docker
+    
+    # links:
+    #   - mysql
+    extra_hosts:
+      - "sreda.dev:127.0.0.1"
+    ports:
+      - 85:80
+      #- 443:443
+    expose:
+      - 9003
+    networks:
+      - www_sreda_network
     volumes:
-      - db-data:/var/lib/postgresql/data:rw
-      # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
-      # - ./docker/db/data:/var/lib/postgresql/data:rw
-###< doctrine/doctrine-bundle ###
+      - "./:/var/www/sreda"
+    environment:
+      PHP_IDE_CONFIG: "serverName=application"
+      DB_HOST: host.docker.internal
+      VIRTUAL_HOST: "sreda.dev.com"
+    container_name: www_sreda_apache_php8_1
+    
+  # phpmyadmin:
+  #   image: phpmyadmin/phpmyadmin
+  #   container_name: dev_pma
+  #   # links:
+  #   #   - mysql
+  #   environment:
+  #     PMA_HOST: host.docker.internal
+  #     PMA_PORT: 3306
+  #   restart: always
+  #   ports:
+  #     - 8183:80
+    
+  # mysql:
+  #   container_name: sds2_mysql
+  #   image: mysql:5.6
+  #   ports:
+  #     - 3306:3306
+  #   volumes:
+  #     - ./.docker/data/mysql:/var/lib/mysql
+  #     - ./.docker/mysql/my.cnf:/etc/mysql/conf.d/custom.cnf
+  #   networks:
+  #     - www_network
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: "root"
+  #     TZ: "Europe/Vilnius"
 
-volumes:
-###> doctrine/doctrine-bundle ###
-  db-data:
-###< doctrine/doctrine-bundle ###
+networks:
+  www_sreda_network:
+    name: www_sreda_network
